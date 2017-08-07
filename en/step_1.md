@@ -1,19 +1,22 @@
-## Introduction
+- Substituting single characters using **regex** is fairly simple using the `re` module in Python.
 
-Add project description here. What will learners be making?
+	```python
+	import re
+	text = 'cat'
+	text = re.sub(r'c', 'b', text)
+	```
 
-### What you will make
+- This will turn `cat` to `bat`. Sometimes you might want to substitute more that one type of character though.
 
-Add something here to showcase here, for example:
+- For instance, you might want to change all mentions of the word `grey` to `black` but you are aware that Americans spell the word `gray`. You need to match both words therefore. To do this you can use a search for `[ae]` which will match both the letters `a` and `e`.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+	```python
+	import re
+	text = 'The walls were grey. The walls were gray'
+	text = re.sub(r'gr[ae]y', 'white', text)
+	```
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
-
-### What you will learn
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+- This will turn `text` into the following:
+  ```python
+  The walls were white. The walls were white
+  ```
