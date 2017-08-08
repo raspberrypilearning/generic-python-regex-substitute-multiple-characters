@@ -1,4 +1,4 @@
-- Substituting single characters using **regex** (**reg**ular **ex**pressions) is fairly simple using the `re` module in Python.
+- Substituting single characters using regex is fairly simple using the `re` module in Python.
 
 	```python
 	import re
