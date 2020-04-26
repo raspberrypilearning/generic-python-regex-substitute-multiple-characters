@@ -1,23 +1,23 @@
-- Substituting single characters using regex is fairly simple using the `re` module in Python.
+- Het vervangen van afzonderlijke tekens met regex is vrij eenvoudig met behulp van de `re` module in Python.
 
     ```python
     import re
-    text = 'cat'
-    text = re.sub(r'c', 'b', text)
+tekst = 'kat'
+tekst = re.sub (r'k', 'r', tekst)
     ```
 
-- This will turn `cat` to `bat`.
+- Hiermee wordt `kat` naar `rat` omgezet.
 
-- Sometimes you might want to substitute more that one type of character though. For instance, you might want to change all mentions of the word `grey` to `black`, but you are aware that Americans spell the word `gray`. Therefore, you need to match either spelling. To do this you can search for `[ae]`, which will match both the letters `a` and `e`.
+- Soms wil je echter meer dat ene type karakter vervangen. Je wilt bijvoorbeeld alle vermeldingen van het woord `doei` veranderen in `dag`, maar je weet dat sommige Nederlanders het woord `doeg` gebruiken. Daarom moet je beide spelling aanpassen. Om dit te doen, kun je zoeken naar `[ig]`, wat overeenkomt met zowel de letters `i` als `g`.
 
     ```python
     import re
-    text = 'The walls were grey. The walls were gray'
-    text = re.sub(r'gr[ae]y', 'white', text)
+tekst = 'Bij het afscheid zeiden ze doei. Bij het afscheid zeiden ze doeg'
+tekst = re.sub(r'doe[ig]', 'dag', tekst)
     ```
 
-- This will turn `text` into the following:
+- Dit zal `tekst` in het volgende veranderen:
 
   ```python
-  The walls were white. The walls were white
+  Bij het afscheid zeiden ze dag. Bij het afscheid zeiden ze dag
   ```
