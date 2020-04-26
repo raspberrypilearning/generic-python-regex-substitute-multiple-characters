@@ -1,7 +1,7 @@
 ---
-title: Substitute regex groups of characters with Python
+title: Vervang regex-groepen tekst met Python
 hero_image: images/banner.png
-description: Substitute groups with regex
+description: Vervang groepen met regex
 original_url:
 theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 1 #possible values: 1, 2 or 3
@@ -14,5 +14,5 @@ technologies: "python"
 site_areas:
 steps:
   - 
-    title: Substitute groups
+    title: Vervangen groepen
 
