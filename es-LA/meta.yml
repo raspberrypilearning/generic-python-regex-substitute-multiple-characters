@@ -1,0 +1,18 @@
+---
+title: Sustituye grupos de caracteres regex con Python
+hero_image: images/banner.png
+description: Sustituye grupos con expresiones regulares
+original_url:
+theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 1 #possible values: 1, 2 or 3
+listed: false
+ingredient: true
+copyedit: true
+curriculum:
+interests:
+technologies: "python"
+site_areas:
+steps:
+  - 
+    title: Sustituye grupos
+
